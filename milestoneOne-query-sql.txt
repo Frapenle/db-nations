@@ -3,5 +3,5 @@
 SELECT c.name AS Nazione, c.country_id as ID, r.name AS Regione,c2.name AS Continente
 FROM countries c 
 	JOIN regions r ON c.region_id = r.region_id 
-	JOIN continents c2 ON r.continent_id = c.region_id 
+	JOIN continents c2 ON r.continent_id = c2.continent_id
 ORDER  BY c.name
